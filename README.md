@@ -1,6 +1,6 @@
-# Sketch Font Auto-Matcher 🎨
+# Sketch Styles Auto-Matcher 🎨
 
-**Automatically match and apply Shared Text Styles to layers based on font properties.**
+**Automatically match and apply Shared Styles to layers based on font properties.**
 
 Developed by [WhiteUI.Store](https://www.whiteui.store/)
 
