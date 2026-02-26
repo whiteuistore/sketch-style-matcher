@@ -1,0 +1,22 @@
+{
+  "name": "Sketch Styles Auto-Matcher",
+  "identifier": "com.whiteuistore.styles-matcher",
+  "version": "1.1.0",
+  "icon": "icon.png",
+  "description": "Automatically applies Shared Styles to text layers based on font, size, and weight settings.",
+  "author": "WhiteUI.Store",
+  "homepage": "https://www.whiteui.store/",
+  "commands": [
+    {
+      "name": "Find and Apply Text Styles",
+      "identifier": "run-matcher",
+      "script": "./script.js"
+    }
+  ],
+  "menu": {
+    "title": "Styles Auto-Matcher",
+    "items": [
+      "run-matcher"
+    ]
+  }
+}
