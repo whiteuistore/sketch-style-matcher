@@ -57,11 +57,18 @@ It is particularly useful when importing assets from other files or when cleanin
 
 ---
 
+## Feedback:
+
+* **Have a suggestion or found a bug? Please open an [issue](https://github.com/whiteuistore/sketch-style-matcher/issues)!
+
+---
+
 ## Technical Details
 
 * **Identifier:** `com.whiteuistore.styles-matcher`
 * **API Version:** Uses the latest Sketch JavaScript API (NSAlert for stable UI).
 * **Compatibility:** Sketch 90+
+
 
 ---
 
