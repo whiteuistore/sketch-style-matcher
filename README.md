@@ -1,4 +1,4 @@
-<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/Sketch%20Auto-Matcher%20Icon.png" width="96" alt="Sketch Styles Auto-Matcher">
+<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Sketch%20Auto-Matcher%20Icon.png" width="96" alt="Sketch Styles Auto-Matcher">
 
 # Sketch Styles Auto-Matcher 🎨
 
@@ -10,8 +10,8 @@ Developed by [WhiteUI.Store](https://www.whiteui.store/)
 
 ## Plugin Preview
 
-<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/Sketch%20Font%20Auto-Matcher.png" width="324" alt="Sketch Styles Auto-Matcher">
-<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/Sketch%20Font%20Auto-Matcher%20Result.png" width="324" alt="Sketch Styles Auto-Matcher Results">
+<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Sketch%20Font%20Auto-Matcher.png" width="324" alt="Sketch Styles Auto-Matcher">
+<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Sketch%20Font%20Auto-Matcher%20Result.png" width="324" alt="Sketch Styles Auto-Matcher Results">
 
 *Above: Example of how the plugin scans the page and applies matching text styles, displaying a summary report.*
 
@@ -44,7 +44,7 @@ It is particularly useful when importing assets from other files or when cleanin
 
 1.  **Download** the latest release https://github.com/whiteuistore/sketch-style-matcher/releases/tag/v1.1.0.
 2.  **Unzip** the archive if necessary.
-3.  **Double-click** `Sketch-Styles-Auto-Matcher.sketchpluginw` to install.
+3.  **Double-click** `Sketch-Styles-Auto-Matcher.sketchplugin` to install.
 
 ---
 
