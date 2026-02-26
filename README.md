@@ -42,7 +42,7 @@ It is particularly useful when importing assets from other files or when cleanin
 
 ## Installation
 
-1.  **Download** the latest release [here](https://github.com/your-username/sketch-font-auto-matcher/releases).
+1.  **Download** the latest release https://github.com/whiteuistore/sketch-style-matcher/releases/tag/v1.1.0.
 2.  **Unzip** the archive if necessary.
 3.  **Double-click** `Sketch-Styles-Auto-Matcher.sketchpluginw` to install.
 
