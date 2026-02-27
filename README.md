@@ -1,4 +1,4 @@
-<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Sketch%20Auto-Matcher%20Icon.png" width="96" alt="Sketch Styles Auto-Matcher">
+<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Plugin%20Cover.jpg" alt="Sketch Styles Auto-Matcher">
 
 # Sketch Styles Auto-Matcher 🎨
 
