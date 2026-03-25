@@ -1,0 +1,58 @@
+{
+  "name": "Styles Auto-Matcher",
+  "identifier": "com.whiteuistore.styles-matcher",
+  "version": "2.0.0",
+  "icon": "icon.png",
+  "description": "Automatically applies Shared Text Styles and Color Variables based on their properties. And detaches all styles in one click.",
+  "author": "WhiteUI.Store",
+  "homepage": "https://www.whiteui.store/",
+  "commands": [
+    {
+      "name": "Find and Apply Text Styles",
+      "identifier": "run-text-matcher",
+      "script": "./text-script.js"
+    },
+    {
+      "name": "Find and Apply Color Variables",
+      "identifier": "run-color-matcher",
+      "script": "./color-script.js"
+    },
+    {
+      "name": "Find and Apply Shared Styles",
+      "identifier": "run-shared-styles",
+      "script": "./shared-styles.js"
+    },
+    {
+      "name": "Detach Symbols, Styles, and Variables",
+      "identifier": "detach-all",
+      "script": "detach-script.js",
+    },
+    {
+      "name": "Visit WhiteUI.Store",
+      "identifier": "visit-store",
+      "script": "visit-store.js",
+      "handler": "onRun"
+    },
+    {
+      "name": "Donate",
+      "identifier": "donate-link",
+      "script": "donate.js",
+      "handler": "onRun"
+    }
+  ],
+  "menu": {
+    "title": "Styles Auto-Matcher",
+    "items": [
+      "run-text-matcher",
+      "run-color-matcher",
+      "run-shared-styles",
+      "-",
+      "detach-all",
+      "-",
+      "visit-store",
+      "donate-link"
+    ]
+  
+  }
+
+}
