@@ -15,7 +15,7 @@ The plugin consists of 4 independent tools, each engineered for a specific workf
 ### 1. 🎨 Match Color Variables (`color-script.js`)
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  <video src="https://github.com/user-attachments/assets/b179175c-bf69-4164-83ea-66cdfb2eaa16" width="100%" controls>
   </video>
 </p>
 
@@ -26,8 +26,17 @@ Scans vector shapes and text layers with custom colors and automatically applies
 
 ### 2. 📝 Match Text Styles (`text-script.js`)
 
+Apply text styles for artboards/frames
+
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  <video src="https://github.com/user-attachments/assets/3bef45d5-000a-4580-b411-a19446e8bbea" width="100%" controls>
+  </video>
+</p>
+
+Apply text styles for symbols
+
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/de2bde91-3883-428e-bba2-9fc17f258edd" width="100%" controls>
   </video>
 </p>
 
@@ -38,7 +47,7 @@ Automatically links disconnected or newly created text layers to your library's 
 ### 3. ✨ Match Shared Styles [Advanced] (`shared-styles.js`)
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  <video src="https://github.com/user-attachments/assets/57b0da6a-4471-4160-85d7-3a534e2fab31" width="100%" controls>
   </video>
 </p>
 
@@ -50,7 +59,7 @@ An advanced algorithm for linking vector objects and Frames to your **Shared Lay
 ### 4. 💣 Global Detach (`detach-script.js`)
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  <video src="https://github.com/user-attachments/assets/f3765b98-e0a4-4169-a385-bbeadf13f5a6" width="100%" controls>
   </video>
 </p>
 
