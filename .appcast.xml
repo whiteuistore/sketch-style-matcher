@@ -3,6 +3,14 @@
   <channel>
     <title>Sketch Styles Auto-Matcher Appcast</title>
     <item>
+      <title>v2.0.0</title>
+      <description>New features for Shared styles, color variables, and option to detach all styles.</description>
+      <enclosure 
+        url="https://github.com/whiteuistore/sketch-style-matcher/releases/download/v2.0.0/Sketch-Styles-Auto-Matcher.zip" 
+        sparkle:version="2.0.0" 
+        type="application/octet-stream" />
+    </item>
+    <item>
       <title>v1.1.0</title>
       <description>Initial stable release: Optimized Text Style matching and new stable UI.</description>
       <enclosure 
