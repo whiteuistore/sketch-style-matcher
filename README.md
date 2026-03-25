@@ -1,85 +1,120 @@
+# 💎 Sketch Styles Auto-Matcher
+
 <img src="https://github.com/whiteuistore/sketch-style-matcher/blob/c8434e4084986b5eb1675aba78db402cb4e10233/assets/Plugin%20Banner.jpg" alt="Sketch Styles Auto-Matcher">
 
-# Sketch Styles Auto-Matcher 🎨
+**Styles Auto-Matcher** is a powerful Sketch plugin designed to handle a UI designer's most tedious tasks. It automatically scans your designs, identifies unlinked layers (text, vectors, frames), and **seamlessly links them** to your existing Shared Styles and Color Variables based on their visual properties. 
 
-**Automatically match and apply Shared Styles to layers based on font properties.**
-
-Developed by [WhiteUI.Store](https://www.whiteui.store/)
+When you need to hand off a clean, dependency-free file, the plugin also features a one-click "Global Detach" tool that flattens your entire design system while keeping the visual output pixel-perfect.
 
 ---
 
-## Plugin Preview
+## 🚀 Core Features (What's Inside)
 
-<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Sketch%20Font%20Auto-Matcher.png" width="324" alt="Sketch Styles Auto-Matcher">
-<img src="https://github.com/whiteuistore/sketch-style-matcher/blob/main/assets/Sketch%20Font%20Auto-Matcher%20Result.png" width="324" alt="Sketch Styles Auto-Matcher Results">
+The plugin consists of 4 independent tools, each engineered for a specific workflow:
 
-*Above: Example of how the plugin scans the page and applies matching text styles, displaying a summary report.*
+### 1. 🎨 Match Color Variables (`color-script.js`)
 
----
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  </video>
+</p>
 
-## Overview
+Scans vector shapes and text layers with custom colors and automatically applies the matching **Color Variables** from your document.
+* **How it matches:** Compares the exact HEX color codes.
+* **Scope:** Scans inside all Artboards on the current page.
+* **Safety:** Strictly ignores layers that already have a variable applied.
 
-**Sketch Styles Auto-Matcher** is a productivity tool for Sketch designers that eliminates the tedious manual work of linking layers to Shared Styles. The current version (v1.1.0) is optimized for Text Styles. We are working on expanding matching capabilities to other styles soon!. If you have an existing design system or a UI Kit with defined Styles, this plugin will scan your layers and automatically apply the correct Shared Style by matching:
+### 2. 📝 Match Text Styles (`text-script.js`)
 
-* **Font Family**
-* **Font Size**
-* **Font Weight**
-* **Kerning (Character Spacing)**
-* **Font Style (Italic/Normal/Bold/etc.)**
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  </video>
+</p>
 
-It is particularly useful when importing assets from other files or when cleaning up a document where styles have been detached. Font alignment is ignored by default.
+Automatically links disconnected or newly created text layers to your library's **Shared Text Styles**.
+* **How it matches:** Compares 5 exact parameters: `Font Family`, `Font Size`, `Font Weight`, `Font Style`, and `Kerning`. If everything matches perfectly, the style is applied.
+* **Scope:** Scans inside all Artboards on the current page.
 
----
+### 3. ✨ Match Shared Styles [Advanced] (`shared-styles.js`)
 
-## Key Features
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  </video>
+</p>
 
-✅ **Automatic Scanning:** Processes all text layers on the current page with one click.  
-✅ **Smart Matching:** Uses a precise algorithm to ensure layers only link to styles that exactly match their properties.  
-✅ **Summary Report:** Displays a native macOS alert showing how many styles were applied and how many layers remain without a match.  
-✅ **Privacy Focused:** Works locally within your Sketch environment; no data is sent to external servers.
+An advanced algorithm for linking vector objects and Frames to your **Shared Layer Styles**.
+* **Smart Context:** Runs on the entire page OR **only on currently selected objects** (Selection Mode).
+* **Deep Analysis:** Creates a unique visual signature. It compares Fills, Borders, Inner/Outer Shadows, Blur Effects, and Opacity.
+* **Geometry Protection:** Strictly **ignores Corner Radius**. The plugin applies the visual style but will never destroy your custom corner radii on buttons or cards.
 
----
+### 4. 💣 Global Detach (`detach-script.js`)
 
-## Installation
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/51c7a9ed-f2fa-4ce1-8b78-7b95aa1f79c1" width="100%" controls>
+  </video>
+</p>
 
-1.  **Download** the latest release https://github.com/whiteuistore/sketch-style-matcher/releases/tag/v1.1.0.
-2.  **Unzip** the archive if necessary.
-3.  **Double-click** `Sketch-Styles-Auto-Matcher.sketchplugin` to install.
 
----
-
-## How to Use
-
-1.  Ensure you have **Shared Text Styles** defined in your document.
-2.  Go to `Plugins` -> `Sketch Styles Auto-Matcher` -> `Find and Apply Styles`.
-3.  The plugin will analyze all text layers on your current page and apply matching styles instantly.
-4.  Review the summary report to see the results.
-
----
-
-## Feedback:
-
-* **Have a suggestion or found a bug? Please open an [issue](https://github.com/whiteuistore/sketch-style-matcher/issues)!
-
----
-
-## Technical Details
-
-* **Identifier:** `com.whiteuistore.styles-matcher`
-* **API Version:** Uses the latest Sketch JavaScript API (NSAlert for stable UI).
-* **Compatibility:** Sketch 90+
-
+The ultimate tool for disconnecting a layout from a design system ("flattening").
+* **Smart Context:** Detaches the entire page OR only selected elements.
+* **What it does:** 1. Recursively unpacks all Symbol Instances into regular groups.
+  2. Unlinks all Shared Text and Layer Styles.
+  3. Converts all Color Variables back into standard Custom Colors.
+* **The Result:** The layout becomes 100% independent, but its **visual appearance remains absolutely identical**.
 
 ---
 
-## About WhiteUI.Store
+## 💡 Use Cases (When is this indispensable?)
 
-WhiteUI.Store provides high-quality UI Kits, Framer templates, and design tools to speed up your workflow. Visit our website for more resources.
-
-🔗 [www.whiteui.store](https://www.whiteui.store/)
+* **🧹 Cleaning up third-party UI Kits.** Downloaded templates often feature elements drawn by hand with no style links. This plugin connects them to your local library in seconds.
+* **🎨 Taming creative chaos.** You sketched a concept quickly using the eyedropper and custom colors. Once approved, you can organize the file with a single click, ensuring strict adherence to your design system.
+* **📦 Developer / Client Handoff.** If a client requests a "clean" source file without dependencies on external symbol libraries, use the **Detach All** command.
+* **✂️ Targeted Local Edits.** Thanks to *Selection Mode*, you can link or detach a single icon or component without affecting the hundreds of other artboards on your page.
 
 ---
 
-## License
+## ⚙️ How It Works (Under the Hood)
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+The plugin is built around a strict "Do No Harm" philosophy:
+1. **It respects existing links:** If a layer already has a Shared Style ID or a Color Variable, the plugin skips it completely.
+2. **Soft Native Linking:** The script utilizes Sketch's internal native API to apply styles smoothly. This prevents the plugin from overwriting local object properties.
+3. **Context-Aware Execution:** The scripts automatically understand your intent. If you select 3 objects and run the plugin, it only processes those 3. If you deselect everything, it scans the entire page.
+
+---
+
+## 📥 Installation
+
+1. Navigate to the [Releases](../../releases) page in this repository.
+2. Download the latest version archive (`Sketch-Styles-Auto-Matcher.sketchplugin.zip`).
+3. Unzip the downloaded file.
+4. Double-click the **`Styles-Matcher.sketchplugin`** file. Sketch will automatically install the plugin and show a success notification.
+
+---
+
+## 🛠 Usage
+
+Once installed, you can access the tools from the top menu in Sketch:
+**`Plugins`** ➔ **`Styles Auto-Matcher`**
+
+Available menu commands:
+* `Find and Apply Text Styles`
+* `Find and Apply Color Variables`
+* `Find and Apply Shared Styles`
+* `---`
+* `Detach Symbols, Styles, and Variables`
+
+Before running any command, the plugin will display a system alert detailing exactly how many objects are selected and what changes will be made.
+
+---
+
+## ☕ Support & Resources
+
+Developed and maintained by **WhiteUI.Store**. If you find this plugin helpful, feel free to explore more resources or support the development:
+
+* **Official Website:** [WhiteUI.Store](https://www.whiteui.store/)
+* **Support the Project:** [Buy Me a Coffee](https://buymeacoffee.com/whiteuistore)
+
+---
+
+### License
+This project is available under the MIT License.
