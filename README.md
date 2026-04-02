@@ -122,6 +122,7 @@ Developed and maintained by **WhiteUI.Store**. If you find this plugin helpful, 
 
 * **Official Website:** [WhiteUI.Store](https://www.whiteui.store/)
 * **Support the Project:** [Buy Me a Coffee](https://buymeacoffee.com/whiteuistore)
+* **Sketch Plugins:** [See more Sketch Plugins](https://www.whiteui.store/sketch-plugins)
 
 ---
 
